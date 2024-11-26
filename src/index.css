@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.array-bar {
+  transition: height 0.2s;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* App container with flex for layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer positioning */
+footer {
+  width: 100%;
+  position: static;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) and (orientation: landscape) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+
